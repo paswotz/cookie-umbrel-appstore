@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: cookie-saic-python-mqtt-gateway
 name: SAIC MQTT Gateway
-tagline: Replace this tagline with your app's tagline
+tagline: The gateway supports Home Assistant MQTT discovery
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "0.10.0"
-port: 4000
+port: 1883
 description: >-
   A service that queries the data from an MG iSMART account and publishes the data over MQTT.
   MG iSMART is the connectivity system in your MG car (MG5, MG4, ZS...).
