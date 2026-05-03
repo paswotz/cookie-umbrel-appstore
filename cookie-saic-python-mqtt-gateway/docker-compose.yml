@@ -5,7 +5,7 @@ services:
     image: saicismartapi/saic-python-mqtt-gateway:latest
     restart: unless-stopped
     environment:
-      - MQTT_URI=mqtt://umbrel-mosquitto:1883
+      - MQTT_URI=tcp://mosquitto_broker_1:1883
       - SAIC_USER=max.mustermann@gmail.com
       - SAIC_PASSWORD=max.mustermann123
       - CHARGING_STATIONS_JSON=/config/charging-stations.json
