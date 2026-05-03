@@ -2,7 +2,7 @@ manifestVersion: 1
 id: cookie-saic-python-mqtt-gateway
 name: SAIC MQTT Gateway
 tagline: The gateway supports Home Assistant MQTT discovery
-icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNityxa-YN6_btW8HLfBs91xqYYwp3whTVQ&s
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/MG_Motor_2021_logo.svg/960px-MG_Motor_2021_logo.svg.png
 category: Development
 version: "0.10.0"
 port: 1883
