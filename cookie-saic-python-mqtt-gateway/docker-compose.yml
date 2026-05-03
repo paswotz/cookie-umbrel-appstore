@@ -7,11 +7,11 @@ services:
     restart: always
     container_name: "saic-mqtt-gateway"
     environment:
-      - MQTT_URI=${MQTT_BROKER_URI}
-      - MQTT_USER=${MQTT_USERNAME}
-      - MQTT_PASSWORD=${MQTT_PASSWORD}
-      - SAIC_USER=${SAIC_USERNAME}
-      - SAIC_PASSWORD=${SAIC_PWD}
+      - MQTT_URI=umbrel.local:1883
+      - MQTT_USER=
+      - MQTT_PASSWORD=
+      - SAIC_USER=max.mustermann@gmail.com
+      - SAIC_PASSWORD=max.mustermann123
       - CHARGING_STATIONS_JSON=/usr/src/app/config/charging-stations.json
     volumes:
       # - ./.secret.env:/usr/src/app/.env:ro  # Uncomment to use a secret environment file
