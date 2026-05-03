@@ -1,18 +1,13 @@
-version: '3.7'
+version: "3.7"
+
 services:
   saic-mqtt-gateway:
-    image: "saicismartapi/saic-python-mqtt-gateway:latest"
-    build:
-      context: .
-    restart: always
-    container_name: "saic-mqtt-gateway"
+    image: saicismartapi/saic-python-mqtt-gateway:latest
+    restart: unless-stopped
     environment:
-      - MQTT_URI=umbrel.local:1883
-      - MQTT_USER=
-      - MQTT_PASSWORD=
+      - MQTT_URI=mqtt://umbrel-mosquitto:1883
       - SAIC_USER=max.mustermann@gmail.com
       - SAIC_PASSWORD=max.mustermann123
-      - CHARGING_STATIONS_JSON=/usr/src/app/config/charging-stations.json
+      - CHARGING_STATIONS_JSON=/config/charging-stations.json
     volumes:
-      # - ./.secret.env:/usr/src/app/.env:ro  # Uncomment to use a secret environment file
-      - ${APP_DATA_DIR}/data:/config
+      - ${APP_DATA_DIR}:/config
