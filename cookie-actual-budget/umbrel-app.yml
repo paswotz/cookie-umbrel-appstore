@@ -2,7 +2,7 @@ manifestVersion: 1
 id: cookie-actual-budget
 name: Actual Budget
 tagline: Privacy-focused personal finance manager
-icon: https://actualbudget.org/img/actual.png
+icon: https://avatars.githubusercontent.com/u/37879538?s=48&v=4
 category: Finance
 version: "25.5.0"
 port: 5006
