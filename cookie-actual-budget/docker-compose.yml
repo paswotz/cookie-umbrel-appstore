@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  actual_server:
+    image: docker.io/actualbudget/actual-server:latest
+    ports:
+      - '5006:5006'
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    restart: unless-stopped
